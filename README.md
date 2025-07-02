@@ -1,94 +1,94 @@
-# Sistema de Cadastro e Login
+# Registration and Login System
 
-Este é um projeto full-stack que implementa um sistema completo de registro, login, recuperação de senha e gerenciamento de usuários, com perfis distintos para "Usuário" e "Administrador".
+Aiming to professionalize the project carried out in C and improve the group's learning, we created this full-stack project that implements a complete system for registration, login, password recovery and user management, with distinct profiles for "User" and "Administrator".
 
-## Descrição
+## Description
 
-A aplicação permite que novos usuários se cadastrem em um processo de duas etapas, definindo uma pergunta e resposta de segurança. Usuários existentes podem fazer login, e caso esqueçam a senha, podem recuperá-la através da pergunta secreta.
+The application allows new users to register in a two-step process, defining a security question and answer. Existing users can log in, and if they forget their password, they can recover it through the secret question.
 
-A interface do administrador oferece funcionalidades adicionais, como a capacidade de visualizar, buscar e excluir usuários cadastrados no sistema.
+The administrator interface offers additional functionalities, such as the ability to view, search and delete users registered in the system.
 
-O frontend é construído com **React** e **Vite**, consumindo uma API RESTful desenvolvida em **Node.js** com **Express**. O banco de dados utilizado é o **MongoDB**, com o **Prisma** atuando como ORM para facilitar as operações de banco de dados.
+The frontend is built with **React** and **Vite**, consuming a RESTful API developed in **Node.js** with **Express**. The database used is **MongoDB**, with **Prisma** acting as ORM to facilitate database operations.
 
 ---
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-Esta é a lista das principais tecnologias e bibliotecas usadas no projeto:
+This is the list of the main technologies and libraries used in the project:
 
 #### Frontend
-* React: Biblioteca para construção da interface de usuário.
-* Vite: Ferramenta de build e servidor de desenvolvimento para o frontend.
-* React Router Dom: Para gerenciamento das rotas e navegação na aplicação.
-* Axios: Cliente HTTP para realizar requisições à API do backend.
-* CSS: Estilização dos componentes através de arquivos CSS dedicados.
+* React: Library for building the user interface.
+* Vite: Build tool and development server for the frontend.
+* React Router Dom: For managing routes and navigation in the application.
+* Axios: HTTP client for making requests to the backend API.
+* CSS: Styling of components through dedicated CSS files.
 
 #### Backend
-* Node.js: Ambiente de execução para o JavaScript no servidor.
-* Express: Framework para a construção da API RESTful.
-* Prisma: ORM para interagir com o banco de dados MongoDB.
-* Bcrypt: Biblioteca para criptografar e verificar senhas de forma segura.
-* CORS: Middleware para habilitar o Cross-Origin Resource Sharing.
-* Dotenv: Para gerenciar variáveis de ambiente de forma segura.
+* Node.js: Server-side JavaScript execution environment.
+* Express: Framework for building the RESTful API.
+* Prisma: ORM for interacting with the MongoDB database.
+* Bcrypt: Library for securely encrypting and verifying passwords.
+* CORS: Middleware for enabling Cross-Origin Resource Sharing.
+* Dotenv: For securely managing environment variables.
 
-#### Banco de Dados
-* MongoDB: Banco de dados NoSQL orientado a documentos.
+#### Database
+* MongoDB: Document-oriented NoSQL database.
 
 ---
 
-## Como Rodar o Projeto
+## How to Run the Project
 
-Siga estas instruções para configurar e executar o projeto em seu ambiente local.
+Follow these instructions to set up and run the project in your local environment.
 
-### Pré-requisitos
+### Prerequisites
 
-Antes de começar, certifique-se de que você tem os seguintes softwares instalados em sua máquina:
-* Node.js (que inclui o npm)
+Before you begin, make sure you have the following software installed on your machine:
+* Node.js (which includes npm)
 * MongoDB
 
-### Configuração do Backend
+### Backend Configuration
 
-1.  Clone o Repositório:
-    `git clone https://github.com/Rafaasj07/Cadastro_Usuarios_Web.git`
-    `cd Cadastro_Usuarios_Web/backend`
+1. Clone the Repository:
+`git clone https://github.com/Rafaasj07/Cadastro_Usuarios_Web.git`
+`cd Cadastro_Usuarios_Web/backend`
 
-2.  Instale as Dependências:
-    `npm install express mongodb cors bcrypt dotenv`
-    `npm install prisma --save-dev`
+2. Install the Dependencies:
+`npm install express mongodb cors bcrypt dotenv`
+`npm install prisma --save-dev`
 
-3.  Configure as Variáveis de Ambiente:
-    Crie um arquivo `.env` na raiz da pasta do backend e adicione sua string de conexão do MongoDB:
-    `DATABASE_URL="mongodb+srv://seu_usuario:sua_senha@seu_cluster.mongodb.net/seu_banco_de_dados"`
+3. Configure the Environment Variables:
+Create a `.env` file in the root of the backend folder and add your MongoDB connection string:
+`DATABASE_URL="mongodb+srv://your_username:your_password@your_cluster.mongodb.net/your_database"`
 
-4.  Sincronize o Banco de Dados com o Prisma:
-    `npx prisma generate`
-    `npx prisma db push`
+4. Synchronize the Database with Prisma:
+`npx prisma generate`
+`npx prisma db push`
 
-### Configuração do Frontend
+### Frontend Configuration
 
-1.  Navegue para a Pasta do Frontend:
-    `cd Cadastro_Usuarios_Web/frontend`
+1. Navigate to the Frontend Folder:
+`cd Cadastro_Usuarios_Web/frontend`
 
-2.  Instale as Dependências:
-    `npm install`
+2. Install the Dependencies:
+`npm install`
 
-### Executando a Aplicação
+### Running the Application
 
-Você precisará de dois terminais abertos: um para o backend e outro para o frontend.
+You will need two terminals open: one for the backend and one for the frontend.
 
-1.  Inicie o Servidor Backend (no terminal do backend):
-    `node --watch server.js`
+1. Start the Backend Server (in the backend terminal):
+`node --watch server.js`
 
-2.  Inicie o Servidor Frontend (no terminal do frontend):
-    `npm run dev`
+2. Start the Frontend Server (in the frontend terminal):
+`npm run dev`
 
 ---
 
-## Comandos Úteis
+## Useful Commands
 
-- Prisma Studio: Para visualizar e gerenciar seu banco de dados.
-  `npx prisma studio`
+- Prisma Studio: To view and manage your database.
+`npx prisma studio`
 
-- Verificar e Corrigir Pacotes:
-  `npm audit`
-  `npm audit fix`
+- Check and Fix Packages:
+`npm audit`
+`npm audit fix`
