@@ -1,0 +1,57 @@
+/* --- CONTAINER GERAL --- */
+.containerMenuAdm{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 145px;
+}
+
+/* --- FORMULÁRIO (CONTAINER DO MENU) --- */
+.formMenuAdm {
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #1c2738;
+  max-width: 50%;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+/* --- TÍTULO --- */
+#h1MenuAdm {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* --- SEÇÃO DE BOTÕES --- */
+.botoesMenuAdm {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  gap: 25px; /* Espaçamento entre os botões. */
+}
+
+/* --- ESTILO GERAL DOS BOTÕES --- */
+.botoesMenuAdm button {
+  border-radius: 30px;
+  height: 45px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: opacity 0.3s, background-color 0.3s;
+  background-color: rgb(67 52 157);
+}
+
+.botoesMenuAdm button:hover {
+  opacity: 0.8; /* Efeito ao passar o mouse. */
+}
+
+/* --- BOTÃO ESPECÍFICO (VOLTAR) --- */
+#voltarHomeMenuAdm {
+  background-color: #b86c45; /* Cor de destaque para o botão de voltar. */
+}

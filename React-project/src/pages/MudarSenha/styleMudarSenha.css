@@ -1,0 +1,82 @@
+/* --- CONTAINER GERAL --- */
+.containerMudarSenha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 145px;
+}
+
+/* --- FORMULÁRIO --- */
+.formMudarSenha {
+    background-color: #1c2738;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    height: 380px; /* Altura fixa para consistência visual. */
+    margin-bottom: 20px;
+}
+
+/* --- TÍTULO --- */
+#h1MudarSenha {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* --- MENSAGEM DE FEEDBACK --- */
+.feedback-message {
+  color: limegreen; /* Cor padrão para sucesso. */
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  min-height: 22px; /* Evita que o layout "pule" quando a mensagem aparece. */
+  margin-top: -4px;
+  margin-bottom: -4px;
+  word-wrap: break-word; /* Garante a quebra de linha para mensagens longas. */
+}
+
+/* --- INPUTS --- */
+.formMudarSenha input {
+    background-color: #2b3a50;
+    color: #ffffff;
+    border: 1.7px solid rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+    height: 45px;
+    font-size: 16px;
+    padding-left: 20px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formMudarSenha input:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Efeito de foco. */
+}
+
+/* --- BOTÃO --- */
+#butaoMudarSenha {
+    margin-top: 10px;
+    border-radius: 30px;
+    height: 45px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(67 52 157);
+    font-size: 16px; 
+    color: white;
+    transition: opacity 0.3s, background-color 0.3s; 
+}
+
+#butaoMudarSenha:hover {
+    opacity: 0.8; /* Efeito ao passar o mouse. */
+}
+
+/* Estilo do botão quando desabilitado. */
+#butaoMudarSenha:disabled {
+    background-color: #3a4a61;
+    opacity: 0.7;
+    cursor: not-allowed;
+}

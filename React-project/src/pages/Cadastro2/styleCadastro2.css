@@ -1,0 +1,114 @@
+/* --- CONTAINER GERAL --- */
+.containerCadastro2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 145px;
+}
+
+/* --- TÍTULO --- */
+#h1Cadastro2 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* --- FORMULÁRIO --- */
+.formCadastro2 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #1c2738;
+    width: 100%;
+    height: 380px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* --- INPUTS --- */
+.formCadastro2 input {
+    background-color: #2b3a50;
+    color: #ffffff;
+    border: 1.7px solid rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+    height: 45px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.formCadastro2 input:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Estilo para corrigir a cor de fundo do preenchimento automático do navegador. */
+.formCadastro2 input:-webkit-autofill,
+.formCadastro2 input:-webkit-autofill:hover, 
+.formCadastro2 input:-webkit-autofill:focus, 
+.formCadastro2 input:-webkit-autofill:active {
+    -webkit-text-fill-color: #ffffff;
+    box-shadow: 0 0 0 30px #2b3a50 inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* --- GRUPO DE INPUT COM CONTADOR --- */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px; /* Espaço entre o input e o contador. */
+}
+
+/* --- CONTADOR DE CARACTERES --- */
+.char-counter {
+    text-align: right;
+    font-size: 12px;
+    color: #aaa;
+    padding-right: 15px;
+}
+
+/* --- MENSAGENS DE FEEDBACK --- */
+#mensagemCadastro2 {
+    margin: -10px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    min-height: 20px;
+}
+
+#mensagemCadastro2.success {
+    color: limegreen; /* Cor para sucesso. */
+}
+
+#mensagemCadastro2.error {
+    color: tomato; /* Cor para erro. */
+}
+
+/* --- BOTÃO --- */
+#butaoCadastro2 {
+    border-radius: 30px;
+    height: 45px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(67 52 157);
+    transition: opacity 0.3s, background-color 0.3s;
+    margin-bottom: 15px;
+}
+
+#butaoCadastro2:hover {
+    opacity: 0.8;
+}
+
+#butaoCadastro2:disabled {
+    background-color: #3a4a61;
+    cursor: not-allowed;
+}

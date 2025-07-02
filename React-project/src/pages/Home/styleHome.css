@@ -1,0 +1,59 @@
+/* --- CONTAINER GERAL --- */
+.containerHome {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 145px;
+}
+
+/* --- FORMULÁRIO (CONTAINER DO CONTEÚDO) --- */
+.formHome {
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #1c2738;
+  max-width: 50%;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+/* --- TÍTULO --- */
+#h1Home {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* --- LOGO --- */
+.logoHome {
+  width: 90px;
+  margin-top: 25px;
+  align-self: center; /* Centraliza a logo no container. */
+}
+
+/* --- SEÇÃO DE BOTÕES --- */
+.botoesHome {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  gap: 25px; /* Espaçamento entre os botões. */
+}
+
+/* --- ESTILO GERAL DOS BOTÕES --- */
+.botoesHome button {
+  border-radius: 30px;
+  height: 45px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: opacity 0.3s, background-color 0.3s;
+  background-color: rgb(67 52 157);
+}
+
+.botoesHome button:hover {
+  opacity: 0.8; /* Efeito ao passar o mouse. */
+}

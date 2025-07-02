@@ -1,0 +1,23 @@
+/* --- RESET GLOBAL --- */
+/* Seleciona todos os componentes na página para aplicar um estilo base. */
+* {
+  margin: 0; /* Remove a margem padrão dos navegadores. */
+  padding: 0; /* Remove o preenchimento padrão dos navegadores. */
+  box-sizing: border-box; /* Define como a largura e altura dos elementos são calculadas. */
+  font-family: 'Poppins', sans-serif; /* Define a fonte padrão para toda a aplicação. */
+}
+
+/* --- ESTILOS DO BODY --- */
+/* Estiliza o corpo principal da página. */
+body {
+  min-height: 100vh; /* Garante que o body tenha no mínimo 100% da altura da tela. */
+  width: 100vw; /* Garante que o body tenha 100% da largura da tela. */
+  background: linear-gradient(180deg, #121212 0%, #1c1c1c 100%); /* Aplica um fundo com gradiente. */
+  overflow-x: hidden; /* Esconde a barra de rolagem horizontal. */
+}
+
+/* --- AJUSTE DE ALTURA --- */
+/* Garante que o HTML, o body e o elemento root (onde o React renderiza) ocupem 100% da altura. */
+html, body, #root {
+  height: 100%;
+}

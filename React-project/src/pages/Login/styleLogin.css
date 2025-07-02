@@ -1,0 +1,100 @@
+/* --- CONTAINER GERAL --- */
+.containerLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 145px;
+}
+
+/* --- TÍTULO --- */
+#h1Login {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* --- FORMULÁRIO --- */
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #1c2738;
+    width: 100%;
+    max-width: 400px;
+    height: 380px;
+    margin-bottom: 20px;
+}
+
+/* --- INPUTS --- */
+.formLogin input {
+    background-color: #2b3a50;
+    color: #ffffff;
+    border: 1.7px solid rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+    height: 45px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formLogin input:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Efeito de foco. */
+}
+
+/* Estilo para corrigir a cor de fundo do preenchimento automático do navegador. */
+.formLogin input:-webkit-autofill,
+.formLogin input:-webkit-autofill:hover, 
+.formLogin input:-webkit-autofill:focus, 
+.formLogin input:-webkit-autofill:active {
+    -webkit-text-fill-color: #ffffff;
+    box-shadow: 0 0 0 30px #2b3a50 inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* --- MENSAGENS DE FEEDBACK --- */
+.mensagemLogin {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    color: tomato; /* Cor padrão para mensagens de erro/aviso. */
+    min-height: 20px;
+    margin: -10px 0;
+}
+
+/* --- BOTÕES --- */
+#butaoLogin, .butaoVoltarHomeLogin {
+    border-radius: 30px;
+    height: 45px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+#butaoLogin {
+    background-color: rgb(67 52 157);
+    margin-bottom: 20px;
+}
+
+.butaoVoltarHomeLogin {
+    background-color: #b86c45;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+#butaoLogin:hover, .butaoVoltarHomeLogin:hover {
+    opacity: 0.8; /* Efeito ao passar o mouse. */
+}
+
+#butaoLogin:disabled {
+    background-color: #3a4a61;
+    cursor: not-allowed;
+}

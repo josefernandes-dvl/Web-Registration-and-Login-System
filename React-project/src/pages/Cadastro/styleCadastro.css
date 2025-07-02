@@ -1,0 +1,105 @@
+/* --- CONTAINER GERAL --- */
+.containerCadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 145px;
+}
+
+/* --- TÍTULO --- */
+#h1Cadastro {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* --- FORMULÁRIO --- */
+.formCadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #1c2738;
+    width: 100%;
+    max-width: 400px; /* Garante que o formulário não fique excessivamente largo em telas grandes. */
+    margin-bottom: 20px;
+}
+
+/* --- INPUTS --- */
+.formCadastro input {
+    background-color: #2b3a50;
+    color: #ffffff;
+    border: 1.7px solid rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+    height: 45px;
+    font-size: 16px;
+    padding-left: 20px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formCadastro input:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Estilo para corrigir a cor de fundo do preenchimento automático do navegador. */
+.formCadastro input:-webkit-autofill,
+.formCadastro input:-webkit-autofill:hover, 
+.formCadastro input:-webkit-autofill:focus, 
+.formCadastro input:-webkit-autofill:active {
+    -webkit-text-fill-color: #ffffff;
+    box-shadow: 0 0 0 30px #2b3a50 inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* --- MENSAGENS DE FEEDBACK --- */
+#mensagemCadastro {
+    margin: -10px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    min-height: 20px; /* Evita que o layout "pule" quando a mensagem aparece. */
+}
+
+#mensagemCadastro.success {
+    color: limegreen; /* Cor para sucesso. */
+}
+
+#mensagemCadastro.error {
+    color: tomato; /* Cor para erro. */
+}
+
+/* --- BOTÕES --- */
+#butaoCadastro, .butaoVoltarHome {
+    border-radius: 30px;
+    height: 45px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+#butaoCadastro {
+    background-color: rgb(67 52 157);
+    margin-bottom: 5px;
+}
+
+.butaoVoltarHome {
+    width: 100%;
+    max-width: 400px; /* Garante que o botão tenha a mesma largura do formulário. */
+    background-color: #b86c45;
+}
+
+#butaoCadastro:hover, .butaoVoltarHome:hover {
+    opacity: 0.8;
+}
+
+#butaoCadastro:disabled {
+    background-color: #3a4a61;
+    cursor: not-allowed;
+}
