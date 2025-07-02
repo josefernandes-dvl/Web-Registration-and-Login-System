@@ -1,6 +1,6 @@
 # Registration and Login System
 
-Aiming to professionalize the project carried out in C and improve the group's learning, we created this full-stack project that implements a complete system for registration, login, password recovery and user management, with distinct profiles for "User" and "Administrator".
+Aiming to professionalize the project **Registration and Login System ChaveMestre**, carried out in C, we created this full-stack project that implements a complete system for registration, login, password recovery and user management, with distinct profiles for "User" and "Administrator".
 
 ## Description
 
