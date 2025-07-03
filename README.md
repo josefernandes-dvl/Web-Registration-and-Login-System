@@ -1,8 +1,8 @@
-# Registration and Login System
+# 🚀 Registration and Login System
 
 Aiming to professionalize the project **Registration and Login System ChaveMestre**, carried out in C, we created this full-stack project that implements a complete system for registration, login, password recovery and user management, with distinct profiles for "User" and "Administrator".
 
-## Description
+## 📝 Description
 
 The application allows new users to register in a two-step process, defining a security question and answer. Existing users can log in, and if they forget their password, they can recover it through the secret question.
 
@@ -12,18 +12,18 @@ The frontend is built with **React** and **Vite**, consuming a RESTful API devel
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 This is the list of the main technologies and libraries used in the project:
 
-#### Frontend
+#### 💻 Frontend
 * React: Library for building the user interface.
 * Vite: Build tool and development server for the frontend.
 * React Router Dom: For managing routes and navigation in the application.
 * Axios: HTTP client for making requests to the backend API.
 * CSS: Styling of components through dedicated CSS files.
 
-#### Backend
+#### 🌐 Backend
 * Node.js: Server-side JavaScript execution environment.
 * Express: Framework for building the RESTful API.
 * Prisma: ORM for interacting with the MongoDB database.
@@ -31,22 +31,22 @@ This is the list of the main technologies and libraries used in the project:
 * CORS: Middleware for enabling Cross-Origin Resource Sharing.
 * Dotenv: For securely managing environment variables.
 
-#### Database
+#### 🗄️ Database
 * MongoDB: Document-oriented NoSQL database.
 
 ---
 
-## How to Run the Project
+## ▶️ How to Run the Project
 
 Follow these instructions to set up and run the project in your local environment.
 
-### Prerequisites
+### ✅ Prerequisites
 
 Before you begin, make sure you have the following software installed on your machine:
 * Node.js (which includes npm)
 * MongoDB
 
-### Backend Configuration
+### ⚙️ Backend Configuration
 
 1. Clone the Repository:
 `git clone https://github.com/Rafaasj07/Cadastro_Usuarios_Web.git`
@@ -64,7 +64,7 @@ Create a `.env` file in the root of the backend folder and add your MongoDB conn
 `npx prisma generate`
 `npx prisma db push`
 
-### Frontend Configuration
+### 🖥️ Frontend Configuration
 
 1. Navigate to the Frontend Folder:
 `cd Cadastro_Usuarios_Web/frontend`
@@ -72,7 +72,7 @@ Create a `.env` file in the root of the backend folder and add your MongoDB conn
 2. Install the Dependencies:
 `npm install`
 
-### Running the Application
+### 🚀 Running the Application
 
 You will need two terminals open: one for the backend and one for the frontend.
 
@@ -84,7 +84,7 @@ You will need two terminals open: one for the backend and one for the frontend.
 
 ---
 
-## Useful Commands
+## ✨ Useful Commands
 
 - Prisma Studio: To view and manage your database.
 `npx prisma studio`
